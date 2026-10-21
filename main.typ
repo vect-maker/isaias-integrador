@@ -184,4 +184,9 @@
 
 #pagebreak()
 
-#include "content/referencias.typ"
+// ==========================================
+// REFERENCIAS BIBLIOGRÁFICAS
+// ==========================================
+= Referencias Bibliográficas
+
+#bibliography("references.bib", style: "apa", title: none)

@@ -4,35 +4,35 @@ Actualmente el consumo de sustancias como el alcohol o el tabaco son considerado
 
 Consumo de alcohol
 
-La Confederación Española de Asociaciones de Padres y Madres del Alumnado (2020), Define que, “El alcohol (etanol) es una sustancia depresora del Sistema Nervioso Central que actúa principalmente bloqueando el funcionamiento del sistema cerebral responsable de controlar las inhibiciones.
+La Confederación Española de Asociaciones de Padres y Madres del Alumnado @ceapa2020 define que: “El alcohol (etanol) es una sustancia depresora del Sistema Nervioso Central que actúa principalmente bloqueando el funcionamiento del sistema cerebral responsable de controlar las inhibiciones.”
 
-La Organización Mundial de la Salud (2024), menciona que “El consumo de alcohol está asociado al riesgo de que aparezcan enfermedades no transmisibles, como enfermedades hepáticas, enfermedades cardiacas y distintos tipos de cáncer, así como trastornos de salud mental y del comportamiento, como la depresión, la ansiedad y los trastornos por consumo de bebidas alcohólicas.”
+La Organización Mundial de la Salud @who2024 menciona que: “El consumo de alcohol está asociado al riesgo de que aparezcan enfermedades no transmisibles, como enfermedades hepáticas, enfermedades cardiacas y distintos tipos de cáncer, así como trastornos de salud mental y del comportamiento, como la depresión, la ansiedad y los trastornos por consumo de bebidas alcohólicas.”
 
 Consumo de Tabaco
 
-La Asociación Española de Medicamentos Genéricos, (2020) define que “El tabaco es una droga estimulante del sistema nervioso central y uno de sus componentes, la nicotina, tiene una capacidad adictiva enorme, precisamente es la causa de que su consumo produzca dependencia. Durante la combustión del tabaco se originan más de 4.000 productos tóxicos diferentes. Entre ellos destacan los alquitranes, que son responsables de distintos tipos de cáncer; el monóxido de carbono, que favorece las enfermedades cardiovasculares; o irritantes, responsables de enfermedades respiratorias como la bronquitis crónica y el enfisema pulmonar”.
+La Asociación Española de Medicamentos Genéricos @aesm2020 define que: “El tabaco es una droga estimulante del sistema nervioso central y uno de sus componentes, la nicotina, tiene una capacidad adictiva enorme, precisamente es la causa de que su consumo produzca dependencia. Durante la combustión del tabaco se originan más de 4.000 productos tóxicos diferentes. Entre ellos destacan los alquitranes, que son responsables de distintos tipos de cáncer; el monóxido de carbono, que favorece las enfermedades cardiovasculares; o irritantes, responsables de enfermedades respiratorias como la bronquitis crónica y el enfisema pulmonar”.
 
 Biomarcadores del consumo de alcohol y tabaco
 
-La Clínica Universidad de Navarra (2023) menciona que “Un biomarcador es una característica biológica que se puede medir de manera objetiva y utilizada como indicador de un proceso fisiológico, una condición patológica o una respuesta a un tratamiento terapéutico, juegan un papel crucial en la medicina de precisión, permitiendo un diagnóstico más temprano, el monitoreo de enfermedades y la personalización de los tratamientos. Su uso se extiende a múltiples especialidades médicas, como oncología, cardiología, nefrología y enfermedades infecciosas”
+La Clínica Universidad de Navarra @cun2023 menciona que: “Un biomarcador es una característica biológica que se puede medir de manera objetiva y utilizada como indicador de un proceso fisiológico, una condición patológica o una respuesta a un tratamiento terapéutico, juegan un papel crucial en la medicina de precisión, permitiendo un diagnóstico más temprano, el monitoreo de enfermedades y la personalización de los tratamientos. Su uso se extiende a múltiples especialidades médicas, como oncología, cardiología, nefrología y enfermedades infecciosas.”
 
 Señales corporales
 
 Signos clínicos
 
-“Signos clínicos son las manifestaciones objetivas, clínicamente fiables y observables en la exploración médica, es decir, en el examen físico del paciente, edema, presión arterial, Ruidos Respiratorios, Hiperglucemia, Ascitis, Crepitación”. (FisioOnline, s.f.).
+“Signos clínicos son las manifestaciones objetivas, clínicamente fiables y observables en la exploración médica, es decir, en el examen físico del paciente, edema, presión arterial, Ruidos Respiratorios, Hiperglucemia, Ascitis, Crepitación” @fisioonline.
 
 Antropométricos
 
-“La antropometría es la ciencia que estudia las medidas y proporciones del cuerpo humano, con el objetivo de evaluar el crecimiento, la composición corporal y el estado nutricional de una persona. Se basa en técnicas estandarizadas que permiten obtener datos cuantitativos de segmentos corporales, útiles para su aplicación en áreas como la medicina, nutrición, ergonomía, epidemiología y medicina del deporte, las principales mediciones incluyen. Peso corporal, talla o estatura, IMC, perímetro de cintura, pliegues cutáneos.”. Clínica Universidad de Navarra (2025)
+“La antropometría es la ciencia que estudia las medidas y proporciones del cuerpo humano, con el objetivo de evaluar el crecimiento, la composición corporal y el estado nutricional de una persona. Se basa en técnicas estandarizadas que permiten obtener datos cuantitativos de segmentos corporales, útiles para su aplicación en áreas como la medicina, nutrición, ergonomía, epidemiología y medicina del deporte, las principales mediciones incluyen: Peso corporal, talla o estatura, IMC, perímetro de cintura, pliegues cutáneos” @cun2025.
 
 Análisis de sangre
 
-“Los análisis de sangre son una herramienta útil para conocer el estado de salud de los pacientes y detectar anomalías que indiquen la presencia de una patología o de una alteración en el funcionamiento de los órganos del cuerpo. También es un procedimiento útil para evaluar la eficacia de los tratamientos empleados para abordar las enfermedades. Los análisis de sangre se suelen adecuar a las necesidades de cada momento, por lo que no siempre se estudian los mismos aspectos. En un análisis de sangre se incluye: Hemograma completo, Recuento de glóbulos rojos, blancos y plaquetas, Concentración de hemoglobina, Lipoproteínas, etc. “. (2026, Quirónsalud)
+“Los análisis de sangre son una herramienta útil para conocer el estado de salud de los pacientes y detectar anomalías que indiquen la presencia de una patología o de una alteración en el funcionamiento de los órganos del cuerpo. También es un procedimiento útil para evaluar la eficacia de los tratamientos empleados para abordar las enfermedades. Los análisis de sangre se suelen adecuar a las necesidades de cada momento, por lo que no siempre se estudian los mismos aspectos. En un análisis de sangre se incluye: Hemograma completo, Recuento de glóbulos rojos, blancos y plaquetas, Concentración de hemoglobina, Lipoproteínas, etc.” @quironsalud2026.
 
 Funciones sensoriales
 
-“La función sensorial se refiere a la capacidad del sistema nervioso de recibir, procesar y responder a la información del entorno a través de los sentidos como la vista, el oído, el tacto, el gusto y el olfato. Este proceso involucra receptores sensoriales que detectan estímulos específicos y transfieren esta información al cerebro para su interpretación. Comprender la función sensorial es crucial para estudiar cómo interactuamos con nuestro entorno y responder a las necesidades diaria”. (StudySmarter GmbH, 2026)
+“La función sensorial se refiere a la capacidad del sistema nervioso de recibir, procesar y responder a la información del entorno a través de los sentidos como la vista, el oído, el tacto, el gusto y el olfato. Este proceso involucra receptores sensoriales que detectan estímulos específicos y transfieren esta información al cerebro para su interpretación. Comprender la función sensorial es crucial para estudiar cómo interactuamos con nuestro entorno y responder a las necesidades diarias” @studysmarter2026.
 
 = Metodología
 
