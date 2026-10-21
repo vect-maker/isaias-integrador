@@ -1,0 +1,53 @@
+= Introducción
+
+El consumo de tabaco y alcohol representa una de las principales amenazas a la salud pública a nivel mundial. La Organización Mundial de la Salud (OMS) estima que estos hábitos son responsables de más de 11 millones de muertes anuales asociadas a enfermedades no transmisibles, como el cáncer y las patologías cardiovasculares. Sin embargo, los métodos convencionales de detección basados en encuestas autodeclaradas enfrentan limitaciones importantes, dado que los individuos tienden a subestimar su consumo real por razones de deseabilidad social. Esto genera una brecha entre los datos reportados y la realidad clínica, dificultando la implementación de políticas de intervención temprana efectivas.
+
+Ante este escenario, el presente proyecto surge como respuesta a la necesidad de desarrollar métodos de clasificación objetivos y no invasivos, capaces de identificar el estado de tabaquismo y consumo de alcohol de un individuo a partir exclusivamente de sus señales corporales y parámetros biométricos. Para ello, se trabaja con un conjunto de datos del Servicio Nacional de Seguro de Salud de Corea del Sur (NHIS), disponible públicamente en el repositorio Kaggle, el cual contiene más de 900,000 registros con 24 variables antropométricas, fisiológicas y bioquímicas recolectadas mediante protocolos estandarizados de la Encuesta Nacional de Examen de Salud y Nutrición de Corea (KNHANES).
+
+El proyecto tiene como objetivo general clasificar a los individuos como fumadores y consumidores de alcohol a partir de sus datos biométricos y patrones corporales, mediante la integración de tres grandes componentes metodológicos: una infraestructura automatizada en la nube desplegada con Terraform sobre Microsoft Azure, la gestión y consulta de datos mediante SQL, y el análisis estadístico basado en modelación matemática y métodos bayesianos implementados en RStudio. Esta combinación de herramientas permite abordar la complejidad inherente a los datos biométricos, los cuales involucran variables de distinta naturaleza continuas, categóricas y ordinales y relaciones de interdependencia que los métodos tradicionales difícilmente capturan de forma integral.
+
+En particular, los métodos bayesianos ofrecen una ventaja clave frente a los enfoques clásicos: permiten incorporar explícitamente la incertidumbre en las estimaciones mediante distribuciones de probabilidad posteriores, actualizadas a partir de los datos observados. Esto posibilita no solo clasificar a los individuos, sino también cuantificar con qué nivel de certeza se realiza dicha clasificación, algo fundamental en contextos de salud pública donde las decisiones tienen consecuencias directas sobre las personas.
+
+El documento está organizado de la siguiente manera: primero se presentan los objetivos y el contexto del problema; luego se expone el planteamiento de la investigación con su hipótesis y limitaciones; después se describe la metodología aplicada; y finalmente se muestran los resultados de cada componente del proyecto (infraestructura, gestión de datos, modelación matemática y clasificación bayesiana), junto con las conclusiones del análisis.
+
+== Objetivos del Proyecto
+
+=== Objetivo General
+
+Clasificar a los individuos como fumadores y consumidores de alcohol a partir de sus datos biométricos y patrones corporales, mediante el uso de métodos bayesianos, modelación matemática e infraestructuras de información.
+
+=== Objetivos Específicos
+
+- Elaborar una infraestructura automatizada mediante Terraform para el aprovisionamiento de un entorno de almacenamiento que permita la recuperación y centralización de los registros biométricos de manera eficiente
+- Analizar el conjunto de datos mediante consultas en SQL, permitiendo la segmentación de variables claves para el estudio de las señales corporales y las variables biométricas.
+- Analizar las relaciones entre los patrones físicos y biométricos mediante modelos matemáticos e implementar métodos bayesianos que permitan una clasificación del consumo de tabaco y alcohol en individuos.
+== Contexto del Problema
+
+La Organización Mundial de la Salud (OMS) describe el consumo de alcohol y tabaco como dos de las mayores amenazas a la salud pública mundial, siendo responsables de más de 11 millones de muertes anuales por enfermedades no transmisibles como cáncer y patologías cardiovasculares. Pese a que las estadísticas oficiales muestran una ligera reducción en el consumo de tabaco, el impacto sigue siendo crítico debido a los sesgos de deseabilidad social en las encuestas autodeclaradas, donde los individuos tienden a subestimar su ingesta real. Ante esta falta de precisión en los datos reportados, la OMS subraya la necesidad de transaccionar hacia métodos de detección objetivos y no invasivos, como el monitoreo de señales corporales (ritmo cardíaco o biomarcadores dérmicos), para obtener diagnósticos tempranos y diseñar políticas de intervención mucho más precisas y eficaces.
+
+En Corea del Sur, el Servicio Nacional de Seguro de Salud (NHIS) realiza exámenes de salud periódicos obligatorios para la población asegurada. Estos exámenes siguen protocolos estandarizados (basados en KNHANES) que incluyen mediciones antropométricas (peso, talla), fisiológicas (presión arterial, agudeza visual, audición) y bioquímicas (perfil lipídico, glucosa, enzimas hepáticas, hemoglobina, creatinina, proteinuria).
+
+Para este análisis (proyecto) se seleccionó una base de datos del repositorio Kaggle con información proveniente del Servicio Nacional de Seguro de Salud de Corea del Sur, siguiendo los protocolos establecidos por la Encuesta Nacional de Examen de Salud y Nutrición de Corea (KNHANES). Contiene más de 900,000 registros sobre mediciones clínicas estandarizadas de señales corporales, incluyendo 24 variables antropométricas, fisiológicas y bioquímicas.
+
+Las variables objetivo que permiten clasificar a las personas están codificadas explícitamente en el dataset de la siguiente manera: SMK_stat_type_cd incluye tres categorías: 1 (nunca fumó), 2 (ex fumador, solía fumar, pero ya no), y 3 (fumador actual), DRK_YN incluye dos categorías: 1 (bebedor) y 0 (no bebedor). El dataset no cuantifica el nivel de consumo (por ejemplo, cigarrillos por día o unidades de alcohol por semana), solo clasifica la condición general.
+
+El problema específico que aborda este análisis es determinar si, a partir exclusivamente de estas señales corporales (sin utilizar preguntas directas sobre consumo), es posible clasificar correctamente a una persona como fumador actual o bebedor, e identificar cuáles de dichas señales tienen mayor poder predictivo. Esto permite superar el sesgo de autodeclaración y facilita intervenciones tempranas en poblaciones de riesgo.
+
+Es importante aclarar que, en el marco de este dataset, el término "señales corporales" no se limita a características observables a simple vista. Por el contrario, la KNHANES define y estandariza el concepto de "señales corporales" (body signals) como cualquier parámetro cuantificable obtenido del cuerpo humano mediante instrumentos validados.
+
+Dentro de este dataset, la clasificación de las personas según su estado de tabaquismo y consumo de alcohol fue realizada originalmente por el NHIS mediante preguntas directas incluidas en el cuestionario médico. Estas clasificaciones están registradas en dos variables objetivo: SMK_stat_type_cd (nunca fumador, ex fumador, fumador actual) y DRK_YN (bebedor o no bebedor)
+
+== Planteamiento del Problema
+
+A pesar de que el dataset seleccionado contiene más de novecientos mil registros de señales corporales obtenidas de exámenes de salud estandarizados en Corea del Sur, existe una dificultad significativa para identificar patrones consistentes que permitan clasificar a los individuos como consumidores o no consumidores de tabaco y alcohol utilizando únicamente estas mediciones objetivas.
+
+Los métodos tradicionales de análisis tienden a ignorar la interdependencia entre los indicadores biológicos, omitiendo la variabilidad aleatoria y tratando los procesos del cuerpo como sistemas lineales y predecibles, lo que limita la capacidad de capturar relaciones complejas y probabilísticas. Por ejemplo, la relación entre las enzimas hepáticas y el consumo de alcohol, o la asociación entre el perfil lipídico y el tabaquismo, suelen analizarse por separado sin aprovechar las interacciones conjuntas entre múltiples señales corporales. Además, la coexistencia de variables de distinta naturaleza (continuas como el colesterol, categóricas como el sexo, ordinales como la proteína en orina) exige modelos capaces de integrarlas de manera coherente.
+
+Frente a estas limitaciones, surge la necesidad de aplicar un enfoque que combine cuatro componentes académicos. En primer lugar, se requiere una infraestructura automatizada que permita la recuperación y centralización reproducible de los datos, para lo cual se propone el despliegue de recursos en Azure mediante Terraform. En segundo lugar, es necesario gestionar y preparar los datos mediante consultas SQL, realizando limpieza, normalización y segmentación de las variables clave. En tercer lugar, los modelos matemáticos permitirán establecer las bases estructurales para identificar qué señales corporales presentan diferencias significativas entre consumidores y no consumidores. Finalmente, los métodos bayesianos ofrecen la capacidad de calcular probabilidades, incorporando explícitamente la incertidumbre mediante distribuciones posteriores e intervalos de credibilidad.
+
+El presente trabajo busca responder a la siguiente pregunta de investigación: ¿es posible clasificar a un individuo como consumidor de tabaco o alcohol utilizando exclusivamente sus señales corporales, mediante un enfoque bayesiano soportado por infraestructura automatizada en Azure y gestión de datos en SQL, y con qué nivel de incertidumbre puede realizarse dicha clasificación?
+
+== Hipótesis y Limitaciones
+
+Se parte de la hipótesis de que los métodos bayesianos, al incorporar distribuciones previas basadas en la prevalencia poblacional y actualizarlas con los datos observados, permitirán reducir la incertidumbre de las predicciones y producir intervalos de credibilidad más estrechos que las estimaciones puntuales tradicionales. No obstante, el análisis reconoce limitaciones importantes, entre ellas que el dataset no cuantifica la intensidad del consumo, que la edad y otras variables de confusión pueden influir en las señales corporales sin estar directamente relacionadas con el consumo, y que los datos provienen exclusivamente de Corea del Sur, lo que limita la generalización de los resultados a otras poblaciones sin validación externa.
+
